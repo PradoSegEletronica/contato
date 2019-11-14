@@ -3,13 +3,13 @@
 require('recaptcha-master/src/autoload.php');
 
 // configure
-$from = 'Demonstracao <demo@rolebit.com>';
-$sendTo = 'Spam <spam@rolebit.com>';
+$from = 'Prado <wpradoseg6819@gmail.com>';
+$sendTo = 'Prado <wpradoseg6819@gmail.com>';
 $subject = 'Nova mensagem de contato';
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
 $okMessage = 'Mensagem enviada com sucesso. Obrigado, retornaremos o contato em breve!';
 $errorMessage = 'Ocorreu um erro enquanto enviavamos o formulario. Tente novamente em alguns instantes';
-$recaptchaSecret = '6Lf1_C0UAAAAAGqWR5v263in9Tqu5FkiEH8PzuIW';
+$recaptchaSecret = '6LfDxMIUAAAAAAgT4nTN0FUCnY07srvlZzuIIaiu';
 
 // let's do the sending
 
