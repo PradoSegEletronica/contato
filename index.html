@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>ROLEBIT - CONTATO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='custom.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-8 col-lg-offset-2">
+
+                    <h1>APRENDA FAZENDO</h1>
+
+                    <p class="lead">Esta é uma demonstração do nosso tutorial escrito no blog ROLEBIT. Ele usa as tecnologias PHP com AJAX e utiliza o sistema do Google de ReCaptcha.</p>
+
+
+                    <form id="contact-form" method="post" action="contato.php" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Nome *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Coloque seu nome *" required="required" data-error="Nome obrigatório.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Sobrenome *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Coloque seu sobrenome *" required="required" data-error="Sobrenome obrigatório.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Coloque seu e-mail *" required="required" data-error="Um e-mail válido é obrigatório.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Fone</label>
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Coloque seu telefone">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Mensagem *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Coloque a mensagem aqui *" rows="4" required="required" data-error="Por favor,escreva-nos sua opinião."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
+                                        <div class="g-recaptcha" data-sitekey="6Lf1_C0UAAAAANi4-W4j61hcy5sVLQ7sKK9b4Ki_"></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="submit" class="btn btn-success btn-send" value="Enviar Mensagem">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted"><strong>*</strong> Todos estes campos são obrigatórios.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div><!-- /.8 -->
+
+            </div> <!-- /.row-->
+
+        </div> <!-- /.container-->
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <script src="validator.js"></script>
+        <script src="contact.js"></script>
+    </body>
+</html>
